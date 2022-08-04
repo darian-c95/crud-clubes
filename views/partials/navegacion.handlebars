@@ -1,0 +1,27 @@
+<table class="table table-striped">  
+    <tr class="table-dark">
+    <th>Name</th>
+    <th>Country</th>
+    <th>Address</th> 
+    <th>Phone</th> 
+    <th>Website</th> 
+    <th>Venue</th> 
+    <th>Actions</th> 
+  </tr>
+
+{{#each items as |item|}} 
+  <tr>
+    <td>
+      <img src={{item.crestUrl}} alt="asd" style="height: 50px">
+      <a href="http://localhost:8084/equipo/{{item.id}}/ver">{{item.shortName}}</a>
+    </td>
+    <td>{{item.area.name}}</td>
+    <td>{{item.address}}</td>
+    <td>{{item.phone}}</td>
+    <td>{{item.website}}</td>
+    <td>{{item.venue}}</td>
+    <td>Ver, Borrar, Actualizar</td> 
+  </tr>
+{{/each}}
+</table>
+
