@@ -20,7 +20,9 @@
     <td>{{item.phone}}</td>
     <td>{{item.website}}</td>
     <td>{{item.venue}}</td>
-    <td>Ver, Borrar, Actualizar</td> 
+    <td>Ver, Actualizar
+      <a href="http://localhost:8084/equipo/{{item.id}}/eliminar">Eliminar</a>
+    </td> 
   </tr>
 {{/each}}
 </table>
