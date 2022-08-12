@@ -1,0 +1,8 @@
+{{#if data.boolean}} 
+    <img src={{data.url}} alt='urlbase' /> 
+{{else}} 
+    <img src="/imagenes/{{data.url}}" alt='urlnueva' />
+{{/if}}
+
+
+{{>actualizaEquipos date=data.equipoActualizado}}

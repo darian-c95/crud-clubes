@@ -2,18 +2,19 @@
 {{#each date as |data|}} 
 <div class="text-center m-3">
     
-    <h1>{{data.name}}</h1>
-    <img src={{data.crestUrl}} alt="asd">
+    <h1>{{data.name}}</h1> 
     
     <div class="divClass">
-        <p>Country: <strong class="pais">{{data.area.name}}</strong></p>
+        <p>Name: <strong>{{data.name}}</strong></p>
         <p>ShortName: <strong>{{data.shortName}}</strong></p>
+        <p>Country: <strong>{{data.area.name}}</strong></p>
         <p>Tla: <strong>{{data.tla}}</strong></p>
         <p>Address: <strong>{{data.address}}</strong></p>
         <p>Phone: <strong>{{data.phone}}</strong></p>
         <p>Website: <strong>{{data.website}}</strong></p>
         <p>Email: <strong>{{data.email}}</strong></p>
         <p>Founded: <strong>{{data.founded}}</strong></p>
+        <p>Club Colors: <strong>{{data.clubColors}}</strong></p>
         <p>Venue: <strong>{{data.venue}}</strong></p> 
 
     </div>

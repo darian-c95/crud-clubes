@@ -1,0 +1,55 @@
+
+{{#each date as |data|}} 
+
+<div class="text-center m-3">
+    <form action="/{{data.id}}/actualizado?_method=PUT" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_method" value="PUT">
+
+        
+        <h1>{{data.name}}</h1>
+            <label for="imagen">Imagen: </label>
+            <input type="file" name="imagen" id="imagen">
+            <input type="submit" value="Subir" />  
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" value="{{data.name}}">
+
+            <label for="shortName">ShortName:</label>
+            <input type="text" name="shortName" value="{{data.shortName}}">
+
+            <label for="country">Country:</label>
+            <input type="text" name="country" value="{{data.area.name}}">
+
+            <label for="tla">Tla:</label>
+            <input type="text" name="tla" value="{{data.tla}}">
+
+            <label for="address">Address:</label>
+            <input type="text" name="address" value="{{data.address}}">
+
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" value="{{data.phone}}">
+
+            <label for="website">Website:</label>
+            <input type="text" name="website" value="{{data.website}}">
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" value="{{data.email}}">
+
+            <label for="founded">Founded:</label>
+            <input type="text" name="founded" value="{{data.founded}}"> 
+
+            <label for="clubColors">Club colors:</label>
+            <input type="text" name="clubColors" value="{{data.clubColors}}">
+
+            <label for="venue">Venue:</label>
+            <input type="text" name="venue" value="{{data.venue}}">
+             
+
+        <a href="http://localhost:8084/">Home</a>   
+        <button type="submit" class="btn btn-secondary">Guardar</button>  
+    </form>
+
+</div>
+
+{{/each}} 
+
