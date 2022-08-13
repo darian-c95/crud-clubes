@@ -1,0 +1,52 @@
+<div>
+    <form action="/nuevo-equipo" method="POST" enctype="multipart/form-data"> 
+        
+        <div>
+            <h1>Crear nuevo equipo</h1> 
+            <label for="imagen">Imagen: </label>
+            <input type="file" name="imagen" id="imagen">
+            <input type="submit" value="Subir" />  
+        </div>
+
+        <div class="d-flex flex-column w-100">
+            <label for="name">Name:</label>
+            <input type="text" name="name" class="w-25">
+
+            <label for="shortName">ShortName:</label>
+            <input type="text" name="shortName" class="w-25">
+
+            <label for="country">Country:</label>
+            <input type="text" name="country" class="w-25">
+
+            <label for="tla">Tla:</label>
+            <input type="text" name="tla" class="w-25">
+
+            <label for="address">Address:</label>
+            <input type="text" name="address" class="w-25">
+
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" class="w-25">
+
+            <label for="website">Website:</label>
+            <input type="text" name="website" class="w-25">
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" class="w-25">
+
+            <label for="founded">Founded:</label>
+            <input type="text" name="founded" class="w-25"> 
+
+            <label for="clubColors">Club colors:</label>
+            <input type="text" name="clubColors" class="w-25">
+
+            <label for="venue">Venue:</label>
+            <input type="text" name="venue" class="w-25">
+        </div>
+             
+        <div class="m-3">
+            <a href="http://localhost:8084/">Home</a>   
+            <button type="submit" class="btn btn-secondary">Guardar</button>  
+        </div>
+    </form>
+
+</div>
