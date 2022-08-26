@@ -12,7 +12,7 @@
 {{#each items as |item|}}
   <tr>
     <td>
-      <a href="http://localhost:8084/equipo/{{item.id}}/ver">{{item.shortName}}</a>
+      <a href="http://localhost:8080/equipo/{{item.id}}/ver">{{item.shortName}}</a>
     </td>
     <td>{{item.area.name}}</td>
     <td>{{item.address}}</td>
@@ -20,9 +20,9 @@
     <td>{{item.website}}</td>
     <td>{{item.venue}}</td>
     <td>
-      <a href="http://localhost:8084/equipo/{{item.id}}/ver">Ver</a>
-      <a href="http://localhost:8084/equipo/{{item.id}}/actualizar">Actualizar</a>
-      <a href="http://localhost:8084/equipo/{{item.id}}/eliminar">Eliminar</a>
+      <a href="http://localhost:8080/equipo/{{item.id}}/ver">Ver</a>
+      <a href="http://localhost:8080/equipo/{{item.id}}/actualizar">Actualizar</a>
+      <a href="http://localhost:8080/equipo/{{item.id}}/eliminar">Eliminar</a>
     </td> 
   </tr>
 {{/each}}

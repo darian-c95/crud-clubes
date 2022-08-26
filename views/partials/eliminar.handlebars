@@ -4,7 +4,9 @@
 <div class="text-center m-3">
     <h2>Esta seguro que desea eliminar el equipo {{item.shortName}}</h2>   
 
-    <form action="/{{item.id}}/eliminado" method="POST"> 
+    <form action="/{{item.id}}/eliminado?_method=DELETE" method="POST"> 
+        <input type="hidden" name="_method" value="DELETE">
+
         <button type="submit" class="btn btn-danger">Delete</button> 
     </form>
 </div>
